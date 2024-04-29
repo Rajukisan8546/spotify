@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+nav {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    background-color: black;
+    color: #ffffff;
+    list-style-type: none;
+    /* margin: 0px 12px; */
+}
+
+nav ul li {
+    padding: 0 4px;
+}
+
+.brand img {
+    height: 7vh;
+    padding: 0 0.3rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 0.8rem;
+
+}
+.container{
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    min-height: 72.5vh;
+    background-color: black;
+    color: #ffffff;
+    border-radius:40px ;
+    padding: 34px;
+    font-family: "Varela Round", sans-serif;
+    background-image: url('/html_css/spotify/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* bottom class */
+
+.bottom {
+    position: sticky;
+    height: 12vh;
+    background-color: black;
+    color:#ffffff;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#myProgressBar{
+    width:80vw;
+    height: 0.2 rem;
+    cursor: pointer;
+}
+.icons{
+    margin-top: 0.4rem;
+}
+.icons i{
+    cursor: pointer;
+}
+.songItem{
+    height: 3rem;
+    border-radius: 35px;
+    display: flex;
+    background-color: #b7f0d8;
+    /* width: 80%; */
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px ;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px ;
+    border-radius: 34px;
+    font-family: "Varela Round", sans-serif;
+}
+
+.timeStamp{
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.songInfo{
+    position:absolute;
+    left: 10vh;
+   
+}
+.songInfo img{
+   opacity: 0;
+   transition: opacity 0.3s ease-in;
+}
